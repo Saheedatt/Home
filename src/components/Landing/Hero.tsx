@@ -8,7 +8,7 @@ const Hero = () => {
   const renderHeading = () => (
     <h1
       id="hero-heading"
-      className="text-4xl md:text-5xl font-bold text-[#FCA311]"
+      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FCA311]"
     >
       Transform Your Home with Smart Intelligence
     </h1>
@@ -16,7 +16,7 @@ const Hero = () => {
 
   const renderDescription = () => (
     <p
-      className="text-xl text-platinum/90 max-w-xl"
+      className="text-base sm:text-lg md:text-xl lg:text-2xl text-platinum/90 max-w-xl"
       aria-describedby="hero-heading"
     >
       Seamlessly control, monitor, and optimize every aspect of your home with
@@ -48,6 +48,7 @@ const Hero = () => {
         alt="Smart Home Dashboard Interface"
         width={600}
         height={400}
+        //priority
         className="relative z-10 rounded-xl shadow-2xl"
       />
     </div>

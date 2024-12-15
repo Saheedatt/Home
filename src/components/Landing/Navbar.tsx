@@ -16,8 +16,10 @@ const Navigation = () => {
 
   const navItems: NavItem[] = [
     { label: "About us", href: "/about" },
-    { label: "How it works", href: "/how-it-works" },
+    { label: "Pricing", href: "/pricing" },
+    // {label: "How it works", href: "/how-it-works"},
     { label: "Help", href: "/help" },
+    { label: "Read", href: "/read" },
     { label: "Contact", href: "/contact" },
     { label: "Sign up", href: "/dashboard" },
   ];
@@ -25,7 +27,7 @@ const Navigation = () => {
   const renderLogo = () => (
     <Link
       href="/"
-      className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold transition-colors hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md"
+      className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold transition-colors hover:text-platinum/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md"
       aria-label="Foyer's Logo"
     >
       Foyer
@@ -37,7 +39,7 @@ const Navigation = () => {
       <Link
         key={item.label}
         href={item.href}
-        className="mx-4 p-2 hover:text-gray-500 p-2 transition-colors text-sm lg:text-base"
+        className="mx-4 p-2 hover:text-[#FCA311] p-2 transition-colors text-sm lg:text-base"
         aria-label={`Navigate to ${item.label}`}
       >
         {item.label}
@@ -85,7 +87,7 @@ const Navigation = () => {
   const renderMenu = () => (
     <button
       ref={menuButtonRef}
-       className="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      className="md:hidden p-2 rounded-md hover:text-[#FCA311] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FCA311]"
       onClick={toggleMenu}
       aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
       aria-expanded={isSidebarOpen}
@@ -115,7 +117,7 @@ const Navigation = () => {
             <Link
               key={item.label}
               href={item.href}
-              className="hover:text-gray-500"
+              className="hover:text-[#FCA311] "
               onClick={closeMenu}
             >
               {item.label}
@@ -128,7 +130,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className="flex justify-between items-center p-4"
+      className="flex justify-between items-center py-4 px-8 bg-white"
       role="navigation"
       aria-label="Main navigation"
     >
