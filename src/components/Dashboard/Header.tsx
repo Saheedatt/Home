@@ -3,10 +3,10 @@ import { Menu, Plus, Bell } from "lucide-react";
 
 const Header = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <header className="bg-[#1A1F36] text-white p-4 flex items-center justify-between border-b border-gray-800 md:ml-64">
+    <header className="bg-[#1A1F36] text-white p-4 flex items-center justify-between border-b border-gray-800 w-full">
       <div>
-      <h1 className="text-lg font-bold text-white">Good day, "user"</h1>
-      <p className="Your systems are functioning as well as expected"></p>
+        <h1 className="text-lg font-bold text-white">Good day, "user"</h1>
+        <p>Your systems are functioning as well as expected</p>
       </div>
       <button className="md:hidden" onClick={toggleSidebar} aria-label="Open Sidebar">
         <Menu size={24} />
@@ -28,6 +28,7 @@ const Header = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
 };
 
 export default Header;
+
 
 
 //Remember to add the conditional statements and the other icons that are supposed to be in the header 
