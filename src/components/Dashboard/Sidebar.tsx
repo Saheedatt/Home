@@ -11,7 +11,6 @@ import {
   Phone,
   LayoutDashboard,
   ShieldAlert,
-  Menu,
   X,
 } from "lucide-react";
 
@@ -63,7 +62,6 @@ const SideNav = ({
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isSidebarOpen, toggleSidebar]);
-
   const renderSkipNavigation = () => (
     <Link
       href="#main-content"
@@ -77,12 +75,12 @@ const SideNav = ({
       ref={sidebarRef}
       role="complementary"
       aria-label="Sidebar Navigation"
-      className={`fixed top-0 left-0 z-50 h-full w-64 bg-[#1A1F36] text-white p-4 transition-transform duration-300 md:translate-x-0 ${
+      className={`fixed md:static top-0 left-0 z-50 h-full w-64 bg-[#1A1F36] text-white p-4 transition-transform duration-300 ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-      }`}
+      } md:translate-x-0`}
     >
       <div className="flex justify-between items-center mb-6">
-        <h2 id="Foyer" className="text-2xl font-bold text-[#FCA311] mb -6">
+        <h2 id="Foyer" className="text-2xl font-bold text-[#FCA311]">
           Foyer
         </h2>
         <button
@@ -100,9 +98,8 @@ const SideNav = ({
           <Link
             key={item.label}
             href={item.href}
-            className="flex items-center hover:bg-gray-700 hover:text-[#FCA311] p-2 rounded transition-colors text-sm lg:text-base"
-            role="navigation"
             aria-label={item.label}
+            className="flex items-center hover:bg-gray-700 hover:text-[#FCA311] p-2 rounded transition-colors text-sm lg:text-base"
           >
             <span className="mr-3">{item.icon}</span>
             {item.label}
