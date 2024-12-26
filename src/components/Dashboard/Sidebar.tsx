@@ -12,6 +12,7 @@ import {
   LayoutDashboard,
   ShieldAlert,
   X,
+  LogOut,
 } from "lucide-react";
 
 interface NavItem {
@@ -40,6 +41,7 @@ const SideNav = ({
     { label: "Notifications", href: "/", icon: <Bell size={20} /> },
     { label: "Music", href: "/", icon: <Music size={20} /> },
     { label: "Support", href: "/", icon: <HelpCircle size={20} /> },
+    { label: "Logout", href: "/", icon: <LogOut size={20} /> },
   ];
 
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -75,16 +77,16 @@ const SideNav = ({
       ref={sidebarRef}
       role="complementary"
       aria-label="Sidebar Navigation"
-      className={`fixed md:static top-0 left-0 z-50 h-full w-64 bg-[#1A1F36] text-white p-4 transition-transform duration-300 ${
+      className={`fixed md:static top-0 left-0 z-50 h-full w-64 bg-white text-gray-900 dark:bg-[#1A1F36] dark:text-white p-4 transition-transform duration-300 ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } md:translate-x-0`}
+      } md:translate-x-0 border-r border-gray-200 dark:border-gray-800`}
     >
       <div className="flex justify-between items-center mb-6">
         <h2 id="Foyer" className="text-2xl font-bold text-[#FCA311]">
           Foyer
         </h2>
         <button
-          className="md:hidden"
+          className="md:hidden text-gray-600 dark:text-gray-300"
           onClick={toggleSidebar}
           aria-label="Close Sidebar"
         >
@@ -99,7 +101,7 @@ const SideNav = ({
             key={item.label}
             href={item.href}
             aria-label={item.label}
-            className="flex items-center hover:bg-gray-700 hover:text-[#FCA311] p-2 rounded transition-colors text-sm lg:text-base"
+            className="flex items-center text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-[#FCA311] p-2 rounded transition-colors text-sm lg:text-base"
           >
             <span className="mr-3">{item.icon}</span>
             {item.label}
