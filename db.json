@@ -1,0 +1,245 @@
+{
+  "centralControl": {
+    "id": 1,
+    "name": "Central Control",
+    "devices": [
+      {
+        "id": 1,
+        "name": "Router",
+        "type": "wifi",
+        "state": "connected"
+      },
+      {
+        "id": 2,
+        "name": "Front Door",
+        "type": "lock",
+        "state": "locked"
+      },
+      {
+        "id": 3,
+        "name": "Back Door",
+        "type": "lock",
+        "state": "locked"
+      },
+      {
+        "id": 4,
+        "name": "Thermostat",
+        "type": "thermostat",
+        "state": "22°C"
+      },
+      {
+        "id": 5,
+        "name": "Humidifier",
+        "type": "humidifier",
+        "state": "on",
+        "humidityLevel": 50
+      },
+      {
+        "id": 6,
+        "name": "Security Lights",
+        "type": "light",
+        "state": "off",
+        "brightness": 50,
+        "color": "white"
+      }
+    ]
+  },
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Living Room",
+      "devices": [
+        {
+          "id": 7,
+          "name": "Living Room Lights",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        },
+        {
+          "id": 8,
+          "name": "Speaker - Living Room",
+          "type": "speaker",
+          "state": "idle",
+          "volume": 30
+        },
+        {
+          "id": 9,
+          "name": "TV - Living Room",
+          "type": "tv",
+          "state": "off"
+        },
+        {
+          "id": 10,
+          "name": "AC - Living room",
+          "type": "ac",
+          "state": "off",
+          "temperature": "26°C"
+        },
+        {
+          "id": 11,
+          "name": "Curtains - Living room",
+          "type": "blinds",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kitchen",
+      "devices": [
+        {
+          "id": 12,
+          "name": "Kitchen Lights",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        },
+        {
+          "id": 13,
+          "name": "Refrigerator",
+          "type": "refrigerator",
+          "state": "running",
+          "temperature": "4°C"
+        },
+        {
+          "id": 14,
+          "name": "Oven",
+          "type": "oven",
+          "state": "off",
+          "temperature": "0°C"
+        },
+        {
+          "id": 15,
+          "name": "Microwave",
+          "type": "microwave",
+          "state": "off",
+          "temperature": "0°C"
+        },
+        {
+          "id": 16,
+          "name": "Dishwasher",
+          "type": "dishwasher",
+          "state": "off"
+        },
+        {
+          "id": 17,
+          "name": "Smoke Detector - Kitchen",
+          "type": "smoke_detector",
+          "state": "normal"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bedroom",
+      "devices": [
+        {
+          "id": 18,
+          "name": "Bedroom Lights",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        },
+        {
+          "id": 19,
+          "name": "Speaker - Bedroom",
+          "type": "speaker",
+          "state": "idle",
+          "volume": 30
+        },
+        {
+          "id": 20,
+          "name": "TV - Bedroom",
+          "type": "tv",
+          "state": "off"
+        },
+        {
+          "id": 21,
+          "name": "AC - Bedroom",
+          "type": "ac",
+          "state": "off",
+          "temperature": "26°C"
+        },
+        {
+          "id": 22,
+          "name": "Curtains - Bedroom",
+          "type": "blinds",
+          "state": "closed"
+        },
+        {
+          "id": 23,
+          "name": "Plug - Lamp",
+          "type": "plug",
+          "state": "on"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bathroom",
+      "devices": [
+        {
+          "id": 24,
+          "name": "Bathroom Lights",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        },
+        {
+          "id": 25,
+          "name": "Toilet Light",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dining Room",
+      "devices": [
+        {
+          "id": 26,
+          "name": "Dining Lights",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        },
+        {
+          "id": 27,
+          "name": "AC - Dining room",
+          "type": "ac",
+          "state": "off",
+          "temperature": "26°C"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Garden",
+      "devices": [
+        {
+          "id": 28,
+          "name": "Sprinkler System",
+          "type": "sprinkler",
+          "state": "off"
+        },
+        {
+          "id": 29,
+          "name": "Garden Lights",
+          "type": "light",
+          "state": "off",
+          "brightness": 50,
+          "color": "white"
+        }
+      ]
+    }
+  ]
+}
