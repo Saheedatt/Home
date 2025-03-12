@@ -34,7 +34,7 @@ const SideNav = ({
       href: "/dashboard",
       icon: <LayoutDashboard size={20} />,
     },
-    { label: "Rooms", href: "/", icon: <Home size={20} /> },
+    { label: "Rooms", href: "/dashboard/rooms", icon: <Home size={20} /> },
     { label: "Devices", href: "/", icon: <Phone size={20} /> },
     { label: "Security", href: "/", icon: <ShieldAlert size={20} /> },
     { label: "Settings", href: "/", icon: <Settings size={20} /> },

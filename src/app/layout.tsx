@@ -1,37 +1,46 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import "font-awesome/css/font-awesome.min.css";
+"use client"
+// import type { Metadata } from "next";
+// import "./globals.css";
 
+// import { ThemeProvider } from "@/contexts/ThemeContext";
+// import { SessionProvider } from "next-auth/react";
+
+// export const metadata: Metadata = {
+//   title: "Foyer",
+//   description: "Make your home smart. Control everything at your fingertips",
+// };
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     <html lang="en">
+//       <body>
+//         <SessionProvider>
+//           <ThemeProvider>{children}</ThemeProvider>
+//         </SessionProvider>
+//       </body>
+//     </html>
+//   );
+// }
+
+
+
+"use client";
+
+import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-export const metadata: Metadata = {
-  title: "Foyer",
-  description: "Make your home smart. Control everything at your fingertips",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        <SessionProvider>
         <ThemeProvider>{children}</ThemeProvider>
+        </SessionProvider>
       </body>
     </html>
   );

@@ -19,7 +19,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       <div className="flex-1 flex flex-col">
         <Header toggleSidebar={toggleSidebar} />
 
-        <main className="p-4 flex-1 bg-white">{children}</main>
+        <main className="flex-1 bg-white">{children}</main>
       </div>
     </div>
   );

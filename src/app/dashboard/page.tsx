@@ -2,6 +2,7 @@
 
 import Overview from "@/components/Dashboard/Overview";
 
-export default function DashboardPage() {
+const DashboardPage= () => {
   return <Overview />;
 }
+export default DashboardPage;
