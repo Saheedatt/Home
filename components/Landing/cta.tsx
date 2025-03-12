@@ -29,7 +29,7 @@ const CallToAction = () => {
     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
       <Link
         href="/dashboard"
-        className="bg-[#FCA311] text-black px-6 py-4 rounded-full flex items-center space-x-2 hover:bg-[#FCA311]/90 transition-colors duration-300 font-semibold text-sm md:text-base lg:text-lg"
+        className="bg-[#FCA311] text-black px-6 py-4 rounded-full flex items-center space-x-2 hover:bg-[#FCA311]/90 focus:outline-none focus:ring-2 focus:ring-[#FCA311] transition-colors duration-300 font-semibold text-sm md:text-base lg:text-lg"
         aria-label="Get started now"
       >
         <span>Start Now</span>
@@ -37,14 +37,14 @@ const CallToAction = () => {
       </Link>
       <Link
         href="/pricing"
-        className="border border-platinum/50 px-6 py-4 rounded-full hover:bg-[#FCA311]/10 transition-colors duration-300 font-semibold text-sm md:text-base lg:text-lg"
+        className="border border-gray-300 text-gray-800 px-6 py-4 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#FCA311] transition-colors duration-300 font-semibold text-sm md:text-base lg:text-lg"
         aria-label="View pricing"
       >
         View Pricing
       </Link>
     </div>
   );
-
+   
   return (
     <section
       className="bg-white py-12 sm:py-16 lg:py-24"

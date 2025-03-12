@@ -12,10 +12,12 @@ const LandingPage = () => {
   return (
     <ErrorBoundary>
       <Navbar />
-      <Hero />
-      <Features />
-      <DeviceIntegration />
-      <CallToAction />
+      <main id="main-content" tabIndex={-1} className="outline-none">
+        <Hero />
+        <Features />
+        <DeviceIntegration />
+        <CallToAction />
+      </main>
       <Footer />
     </ErrorBoundary>
   );
