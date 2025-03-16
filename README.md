@@ -61,5 +61,5 @@ Like any ambitious project, I have faced several challenges along the way:
 
 Here’s a quick look at the current state of the Smart Home Dashboard:
 
-![Dashboard Screenshot](./public/dashboard.png)
+![Dashboard Screenshot](/dashboard.png)
 
