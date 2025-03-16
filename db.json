@@ -7,19 +7,19 @@
         "id": 1,
         "name": "Router",
         "type": "wifi",
-        "state": "connected"
+        "state": "false"
       },
       {
         "id": 2,
         "name": "Front Door",
         "type": "lock",
-        "state": "locked"
+        "state": "false"
       },
       {
         "id": 3,
         "name": "Back Door",
         "type": "lock",
-        "state": "locked"
+        "state": "false"
       },
       {
         "id": 4,
@@ -31,14 +31,14 @@
         "id": 5,
         "name": "Humidifier",
         "type": "humidifier",
-        "state": "on",
+        "state": "false",
         "humidityLevel": 50
       },
       {
         "id": 6,
         "name": "Security Lights",
         "type": "light",
-        "state": "off",
+        "state": "false",
         "brightness": 50,
         "color": "white"
       }
@@ -53,7 +53,7 @@
           "id": 7,
           "name": "Living Room Lights",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         },
@@ -61,27 +61,27 @@
           "id": 8,
           "name": "Speaker - Living Room",
           "type": "speaker",
-          "state": "idle",
+          "state": "false",
           "volume": 30
         },
         {
           "id": 9,
           "name": "TV - Living Room",
           "type": "tv",
-          "state": "off"
+          "state": "false"
         },
         {
           "id": 10,
           "name": "AC - Living room",
           "type": "ac",
-          "state": "off",
+          "state": "false",
           "temperature": "26°C"
         },
         {
           "id": 11,
           "name": "Curtains - Living room",
           "type": "blinds",
-          "state": "closed"
+          "state": "false"
         }
       ]
     },
@@ -93,7 +93,7 @@
           "id": 12,
           "name": "Kitchen Lights",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         },
@@ -101,34 +101,34 @@
           "id": 13,
           "name": "Refrigerator",
           "type": "refrigerator",
-          "state": "running",
+          "state": "false",
           "temperature": "4°C"
         },
         {
           "id": 14,
           "name": "Oven",
           "type": "oven",
-          "state": "off",
+          "state": "false",
           "temperature": "0°C"
         },
         {
           "id": 15,
           "name": "Microwave",
           "type": "microwave",
-          "state": "off",
+          "state": "false",
           "temperature": "0°C"
         },
         {
           "id": 16,
           "name": "Dishwasher",
           "type": "dishwasher",
-          "state": "off"
+          "state": "false"
         },
         {
           "id": 17,
           "name": "Smoke Detector - Kitchen",
           "type": "smoke_detector",
-          "state": "normal"
+          "state": "auto"
         }
       ]
     },
@@ -140,7 +140,7 @@
           "id": 18,
           "name": "Bedroom Lights",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         },
@@ -148,33 +148,33 @@
           "id": 19,
           "name": "Speaker - Bedroom",
           "type": "speaker",
-          "state": "idle",
+          "state": "false",
           "volume": 30
         },
         {
           "id": 20,
           "name": "TV - Bedroom",
           "type": "tv",
-          "state": "off"
+          "state": "false"
         },
         {
           "id": 21,
           "name": "AC - Bedroom",
           "type": "ac",
-          "state": "off",
+          "state": "false",
           "temperature": "26°C"
         },
         {
           "id": 22,
           "name": "Curtains - Bedroom",
           "type": "blinds",
-          "state": "closed"
+          "state": "false"
         },
         {
           "id": 23,
           "name": "Plug - Lamp",
           "type": "plug",
-          "state": "on"
+          "state": "false"
         }
       ]
     },
@@ -186,7 +186,7 @@
           "id": 24,
           "name": "Bathroom Lights",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         },
@@ -194,7 +194,7 @@
           "id": 25,
           "name": "Toilet Light",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         }
@@ -208,7 +208,7 @@
           "id": 26,
           "name": "Dining Lights",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         },
@@ -216,7 +216,7 @@
           "id": 27,
           "name": "AC - Dining room",
           "type": "ac",
-          "state": "off",
+          "state": "false",
           "temperature": "26°C"
         }
       ]
@@ -229,13 +229,13 @@
           "id": 28,
           "name": "Sprinkler System",
           "type": "sprinkler",
-          "state": "off"
+          "state": "false"
         },
         {
           "id": 29,
           "name": "Garden Lights",
           "type": "light",
-          "state": "off",
+          "state": "false",
           "brightness": 50,
           "color": "white"
         }
